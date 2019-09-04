@@ -1,8 +1,0 @@
-apiVersion: deliverybot.io/v1alpha1
-kind: Application
-metadata:
-  name: example-application-stable
-spec:
-  app:
-    name: example-application
-    version: v1
