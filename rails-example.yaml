@@ -1,0 +1,23 @@
+apiVersion: deliverybot.io/v1alpha1
+kind: Application
+metadata:
+  name: example-rails-stable
+spec:
+  app:
+    name: example-rails
+    version: v1
+  image:
+    repository: myrepo
+    tag: v1
+  ingress:
+    enabled: true
+    hosts:
+      - host: example.com
+        paths: ["/"]
+  secret: example-rails-secret
+  env:
+    - name: RAILS_ENV
+      value: production
+  migrate:
+    enabled: true
+    command: "rails db:migrate"
