@@ -1,0 +1,11 @@
+namespace: kube-system
+commonLabels:
+  app.kubernetes.io/name: app-operator
+  app.kubernetes.io/version: "0.0.2"
+
+resources:
+- ./operator.yaml
+- ./role_binding.yaml
+- ./role.yaml
+- ./service_account.yaml
+- ./deliverybot_v1alpha1_application_crd.yaml
