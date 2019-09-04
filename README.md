@@ -4,6 +4,8 @@ Kubernetes operator for GRPC or HTTP applications. Simplifies and reduces
 boilerplate by creating an ingress, service and deployment under the hood for
 you.
 
+STATUS: Experimental.
+
 ## Installation
 
 ```bash
