@@ -4,15 +4,19 @@ Kubernetes operator for GRPC or HTTP applications. Simplifies and reduces
 boilerplate by creating an ingress, service and deployment under the hood for
 you.
 
+Are you tired of copying around complex Helm configuration for deployments?
+The `app-operator` is a Helm chart with best practices for deploying http based
+services to Kubernetes.
+
+This is born out of copying similar configuration around to make helm charts
+that look quite alike one another.
+
 STATUS: Experimental.
 
-## Installation
-
-```bash
-kubectl apply -k https://github.com/deliverybot/app-operator/deploy/
-```
-
 ## Example
+
+Create's a deployment resource using the image `myrepo:v1` to Kubernetes with
+a service and a corresponding ingress resource.
 
 ```yaml
 apiVersion: deliverybot.io/v1alpha1
@@ -23,6 +27,20 @@ spec:
   app:
     name: example-application
     version: v1
+  image:
+    repository: myrepo
+    tag: v1
+  ingress:
+    enabled: true
+    hosts:
+      - host: example.com
+        paths: ["/"]
+```
+
+## Installation
+
+```bash
+kubectl apply -k https://github.com/deliverybot/app-operator/deploy/
 ```
 
 ## Spec
