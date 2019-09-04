@@ -13,7 +13,7 @@ spec:
       serviceAccountName: app-operator
       containers:
         - name: app-operator
-          image: gcr.io/deliverybot/app-operator:v0.0.2
+          image: gcr.io/deliverybot/app-operator:v0.0.1
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
