@@ -6,10 +6,11 @@ you.
 
 Are you tired of copying around complex Helm configuration for deployments?
 The `app-operator` is a Helm chart with best practices for deploying http based
-services to Kubernetes.
+services to Kubernetes. This is born out of copying similar configuration around 
+to make helm charts that look quite alike one another.
 
-This is born out of copying similar configuration around to make helm charts
-that look quite alike one another.
+An added benefit of this approach is removing the dependency on a server side
+Tiller for applying charts.
 
 STATUS: Experimental.
 
