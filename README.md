@@ -6,7 +6,7 @@ you.
 
 Are you tired of copying around complex Helm configuration for deployments?
 The `app-operator` is a Helm chart with best practices for deploying http based
-services to Kubernetes. This is born out of copying similar configuration around 
+services to Kubernetes. This is born out of copying similar configuration around
 to make helm charts that look quite alike one another.
 
 An added benefit of this approach is removing the dependency on a server side
@@ -20,7 +20,7 @@ Create's a deployment resource using the image `myrepo:v1` to Kubernetes with
 a service and a corresponding ingress resource.
 
 ```yaml
-apiVersion: deliverybot.io/v1alpha1
+apiVersion: deliverybot.dev/v1alpha1
 kind: Application
 metadata:
   name: example-application

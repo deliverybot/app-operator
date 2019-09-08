@@ -58,7 +58,7 @@ rules:
   verbs:
   - get
 - apiGroups:
-  - deliverybot.io
+  - deliverybot.dev
   resources:
   - '*'
   verbs:

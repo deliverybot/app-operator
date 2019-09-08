@@ -12,8 +12,8 @@
 app.kubernetes.io/name: {{ .Values.app.name }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/version: {{ .Values.app.version | quote }}
-app.kubernetes.io/managed-by: "deliverybot.io/Application"
-deliverybot.io/chart: {{ include "app.chart" . }}
+app.kubernetes.io/managed-by: "deliverybot.dev/Application"
+deliverybot.dev/chart: {{ include "app.chart" . }}
 {{- end -}}
 
 {{/* Match labels to find this instance */}}

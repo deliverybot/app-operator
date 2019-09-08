@@ -1,5 +1,5 @@
 ---
 - version: v1alpha1
-  group: deliverybot.io
+  group: deliverybot.dev
   kind: Application
   chart: /opt/helm/helm-charts/application
