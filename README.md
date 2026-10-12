@@ -1,5 +1,8 @@
 # App Operator
 
+> [!WARNING]
+> This operator is no longer maintained and the repository is archived. For deploying with Deliverybot, see the [Helm](https://deliverybot.dev/docs/integrations/action-helm/) and [GitOps](https://deliverybot.dev/docs/integrations/gitops/) guides.
+
 Kubernetes operator for GRPC or HTTP applications. Simplifies and reduces
 boilerplate by creating an ingress, service and deployment under the hood for
 you.
